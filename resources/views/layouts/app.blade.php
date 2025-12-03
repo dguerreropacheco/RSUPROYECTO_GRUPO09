@@ -159,6 +159,14 @@
                                         <p>Vehículo</p>
                                     </a>
                                 </li>
+
+                                
+                                <li class="nav-item">
+    <a href="{{ route('admin.mantenimiento.index') }}" class="nav-link {{ request()->routeIs('admin.mantenimiento.*') ? 'active' : '' }}">
+        <i class="fas fa-tools nav-icon"></i>
+        <p>Mantenimiento</p>
+    </a>
+</li>
                            
                             </ul>
                         </li>

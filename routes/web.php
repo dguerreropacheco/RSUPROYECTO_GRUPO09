@@ -280,6 +280,20 @@ Route::get('/dashboard/programacion/{id}/data', [DashboardController::class, 'ge
 
 
 
+Route::prefix('mantenimiento')->name('admin.mantenimiento.')->middleware(['auth'])->group(function () {
+    Route::get('/', [MantenimientoController::class, 'index'])->name('index');
+    Route::post('/', [MantenimientoController::class, 'store'])->name('store');
+    Route::put('/{mantenimiento}', [MantenimientoController::class, 'update'])->name('update');
+    Route::delete('/{mantenimiento}', [MantenimientoController::class, 'destroy'])->name('destroy');
+    
+    Route::post('/horarios', [MantenimientoController::class, 'storeHorario'])->name('horarios.store');
+    Route::put('/horarios/{horario}', [MantenimientoController::class, 'updateHorario'])->name('horarios.update');
+    Route::delete('/horarios/{horario}', [MantenimientoController::class, 'destroyHorario'])->name('horarios.destroy');
+    Route::get('/horarios/{horario}/dias', [MantenimientoController::class, 'showDias'])->name('horarios.dias');
+    
+    Route::put('/dias/{dia}', [MantenimientoController::class, 'updateDia'])->name('dias.update');
+});
+
 
 
     // ========================================
