@@ -65,17 +65,12 @@ Proyecto académico web desarrollada con <strong>PHP (Laravel)</strong> orientad
 ## ▶️ Despliegue
 
 
--Este proyecto fue desplegado en Railway , vinculando Github y utilizando Postgresql como motor de base de datos.
-
 <img width="1190" height="530" alt="image" src="https://github.com/user-attachments/assets/25f8785a-5b7c-484c-bb2a-4b79f10d8a2e" />
 
-
-- El enlace de la aplicación es: https://rsuproyectophplaravel-production.up.railway.app
 
 <img width="1726" height="746" alt="image" src="https://github.com/user-attachments/assets/0d6d2447-61ea-48ad-8ede-f1b0454d5da5" />
 
 
--Puede acceder, registrarse y navegar por el proyecto.
 
 
 ---
